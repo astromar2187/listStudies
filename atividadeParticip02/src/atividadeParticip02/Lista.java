@@ -137,6 +137,10 @@ public class Lista {
         		inicio = null;
         	} else {
         		Node aux = procuraNome(nome);
+        		if(aux==null) {
+        			System.out.println("Nome não está na lista!");
+        			return;
+        		}
         		aux.ant.prox = aux.prox;
         		aux.prox.ant = aux.ant;
         	}

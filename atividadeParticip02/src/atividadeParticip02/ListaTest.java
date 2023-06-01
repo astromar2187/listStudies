@@ -134,6 +134,7 @@ public class ListaTest {
 		
 		lista1.excluiNome("Maria");
 		assertEquals("Ana -> Victor -> Marcelo -> ", lista1.mostrarLista());
+		lista1.excluiNome("Igor");
 		lista1.procuraNome("Maria");
 		lista1.procuraNome("Marcelo");
 
